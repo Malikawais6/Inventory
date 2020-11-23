@@ -22,7 +22,7 @@ const Products = () => {
   };
 
   let productList = JSON.parse(localStorage.getItem("productList"));
-  if (productList == null) productList = [];
+  if (productList === null) productList = [];
 
   const handleAddItem = (event) => {
     event.preventDefault();
@@ -90,7 +90,7 @@ const Products = () => {
           <button
             type="button"
             data-testid="open-modal"
-            className="addBtn"
+            className="add-button"
             onClick={handleShowModal}
           >
             Add Item

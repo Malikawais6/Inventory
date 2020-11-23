@@ -32,7 +32,7 @@ const Modal = (props) => {
             min={0}
             name="price"
           />
-          <input type="submit" value="Submit" className="submitBtn" />
+          <input type="submit" value="Submit" className="submit-button" />
         </form>
       </section>
     </div>

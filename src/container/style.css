@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.addBtn {
+.add-button {
   padding: 10px;
   width: 200px;
   background: #d9d9d9;
@@ -17,7 +17,7 @@
   order: 2;
 }
 
-.addBtn:hover {
+.add-button:hover {
   background-color: #bbb;
 }
 

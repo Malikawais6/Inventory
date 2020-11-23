@@ -29,7 +29,7 @@ const Table = (props) => {
                 <td>{today.toUTCString()}</td>
                 <td
                   className="remove"
-                  onClick={() => handleDeleteItem(item.id)}
+                  onClick={() => handleDeleteItem(item.date)}
                 >
                   &times;
                 </td>

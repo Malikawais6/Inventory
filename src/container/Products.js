@@ -31,13 +31,13 @@ const Products = () => {
       description: event.target[1].value,
       price: event.target[2].value,
       date: Date.now(),
-      id: Date.now(),
     };
     setState({
       ...state,
       showModal: false,
     });
     document.getElementById("form-item").reset();
+
     localStorage.setItem("itemsObject", JSON.stringify(newItem));
     const newData = productList.concat(newItem);
     localStorage.setItem("productList", JSON.stringify(newData));
@@ -45,7 +45,7 @@ const Products = () => {
 
   const handleDeleteItem = (itemId) => {
     const updatedItems = productList.filter((item) => {
-      return item.id !== itemId;
+      return item.date !== itemId;
     });
 
     localStorage.setItem(

@@ -29,6 +29,7 @@ const Modal = (props) => {
             data-testid="input-number"
             required
             placeholder="Price..."
+            min={0}
             name="price"
           />
           <input type="submit" value="Submit" className="submitBtn" />

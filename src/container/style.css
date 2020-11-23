@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 200px;
+  background: #d9d9d9;
+  color: #555;
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  height: 50px;
+  margin-left: auto;
+  order: 2;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.header-fields {
+  display: flex;
+  padding: 5px;
+}

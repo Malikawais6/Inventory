@@ -1,10 +1,18 @@
 # Products List
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Prerequisites
+
+This project requires `node` and `npm`/`yarn` to run.
+
+Install dependencies
+
+### `yarn install`
+
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `yarn install`
 
 ### `yarn start`
 

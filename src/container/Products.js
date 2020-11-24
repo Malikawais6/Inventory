@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 
 // src
-import Table from "../components/Table/Table";
-import Modal from "../components/Modal/Modal";
+import Table from "../components/Table";
+import Modal from "../components/Modal";
 
 import "./style.css";
 
@@ -11,6 +11,7 @@ const Products = () => {
   const [state, setState] = useState({
     showModal: false,
     searchedValue: "",
+    list: [],
   });
 
   const handleShowModal = () => {
@@ -35,17 +36,23 @@ const Products = () => {
     setState({
       ...state,
       showModal: false,
+      list: [...productList, newItem],
     });
     document.getElementById("form-item").reset();
 
     localStorage.setItem("itemsObject", JSON.stringify(newItem));
-    const newData = productList.concat(newItem);
+    const newData = [...productList, newItem];
     localStorage.setItem("productList", JSON.stringify(newData));
   };
 
   const handleDeleteItem = (itemId) => {
     const updatedItems = productList.filter((item) => {
       return item.date !== itemId;
+    });
+
+    setState({
+      ...state,
+      list: [].concat(updatedItems),
     });
 
     localStorage.setItem(

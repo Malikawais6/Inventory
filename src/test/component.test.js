@@ -1,6 +1,5 @@
 import { fireEvent, render } from "@testing-library/react";
-import Modal from "../components/Modal/Modal";
-import Table from "../components/Table/Table";
+import Modal from "../components/Modal";
 import Products from "../container/Products";
 
 describe("Parent render test", () => {
